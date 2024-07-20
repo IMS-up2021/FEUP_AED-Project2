@@ -40,7 +40,7 @@ Como fatores de valorização extra, para além das diferentes variações atrá
 Os dados estão disponíveis em dataset.zip sob a forma de ficheiros csv ( comma separated values ) e foram obtidos diretamente a partir do site OpenFlights (tendo sido recolhidos em Junho de 2014).
 
 - Ficheiro **airports.csv** (3019 aeroportos)
-
+```
 _(primeiras 6 linhas)_
 Code,Name,City,Country,Latitude,Longitude
 CDG,Charles De Gaulle,Paris,France,49.012779,2.
@@ -48,12 +48,12 @@ ORY,Orly,Paris,France,48.725278,2.
 LGA,La Guardia,New York,United States,40.777245,-73.
 JFK,John F Kennedy Intl,New York,United States,40.639751,-73.
 LHR,Heathrow,London,United Kingdom,51.477500,-0.
-
+```
 
 A primeira linha são os cabeçalhos. Cada uma das linhas seguintes indica o código IATA do aeroporto (que é único e sem repetições), o nome do aerporto, a cidade onde está, o país e onde está localizado (latitude e longitude).
 
 - Ficheiro **airlines.csv** (444 companhias aéreas)
-
+```
 _(primeiras 6 linhas)_
 Code,Name,Callsign,Country
 IBE,Iberia Airlines,IBERIA,Spain
@@ -61,11 +61,11 @@ KLM,KLM Royal Dutch Airlines,KLM,Netherlands
 SWR,Swiss International Air Lines,SWISS,Switzerland
 AAL,American Airlines,AMERICAN,United States
 RYR,Ryanair,RYANAIR,Ireland
-
+```
 A primeira linha são os cabeçalhos. Cada uma das linhas seguintes indica o código ICAO da companhia aérea linha (que é único e sem repetições), o seu nome “oficial”, a “alcunha” porque é chamada (se não existir alcunha, este campo contém somente “_”) e o país de origem.
 
 - Ficheiros **flights.csv** (63832 voos)
-
+```
 _(primeiras 6 linhas)_
 Source,Target,Airline
 CDG,JFK,AAL
@@ -73,7 +73,7 @@ JFK,CDG,AAL
 ORY,LHR,IBE
 ORY,LHR,BAW
 OPO,LIS,TAP
-
+```
 
 A primeira linha são os cabeçalhos. Cada uma das linhas seguintes indica o código IATA do aeroporto de partida, o código IATA do aerporto de chegada e o código ICAO da companhia aérea. Note que as ligações são dirigidas e que podem existir vários voos com o mesmo destino e origem, se forem de diferentes companhias.
 
